@@ -42,7 +42,7 @@ body {
 }
 
 .lbl-brdr {
-    border: 1px dashed #B2BAD0;
+    border: 2px dashed #B2BAD0;
     border-radius: 15px;
 }
 
@@ -109,8 +109,23 @@ body {
     border-radius: 20px;
 }
 
-.form-control:focus ,.form-select:focus 
+.form-control:focus ,.form-select:focus  ,.form-check-input:focus  
 {
     border: 1px solid #4318FF;
     box-shadow: none;
+   
 } 
+input[type="range"]:focus::-webkit-slider-thumb
+{
+    background-color: #4318FF;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+   
+    box-shadow: none  !important ;
+    background-color: #4318FF;
+    border-color: #4318FF;
+   
+  }
+
+
