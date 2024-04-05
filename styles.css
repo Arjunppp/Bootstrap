@@ -36,6 +36,10 @@ body {
     margin: 0px;
 
 }
+.sal-width
+{
+    flex: 0 0 22%;
+}
 
 .lbl-brdr {
     border: 1px dashed #B2BAD0;
@@ -46,15 +50,20 @@ body {
 
     font-size: 14px;
     font-weight: 500;
-    line-height: 14px;
-    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+   
 
 
+}
+.text-clr
+{
+    color: #4318FF;
 }
 
 .lbl-astrck::after {
     content: '*';
     color: red;
+    margin-left: 2px;
 }
 
 
@@ -71,16 +80,16 @@ body {
 
 .custom-select {
     font-size: 12px;
-    line-height: 14px;
-    font-weight: 400;
-    border-color: #8F9BBA;
+    /* line-height: 14px; */
+    /* font-weight: 400; */
+    /* border-color: #8F9BBA; */
     color: #8F9BBA;
     padding: .5rem;
 }
 
 .p-heading {
     font-size: 16px;
-    line-height: 16px;
+    
     font-weight: 500;
     color: #624E17;
 
@@ -90,8 +99,8 @@ body {
 
     font-size: 14px;
     font-weight: 400;
-    line-height: 19.32px;
-    letter-spacing: -0.02em;
+   
+   
     margin: 0;
 
 }
@@ -100,3 +109,8 @@ body {
     border-radius: 20px;
 }
 
+.form-control:focus ,.form-select:focus 
+{
+    border: 1px solid #4318FF;
+    box-shadow: none;
+} 
