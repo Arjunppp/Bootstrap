@@ -1,13 +1,102 @@
-:root
-{
-    --background-color:#E9EDF2;
-    --text-color:#2B3674;
+:root {
+    --background-color: #E9EDF2;
+    --text-color: #2B3674;
     --font-family: "DM Sans", sans-serif;
 }
 
-body
-{
+body {
     background-color: var(--background-color);
     font-family: var(--font-family);
     color: var(--text-color);
 }
+
+.material-symbols-outlined.icn-fnt-32
+{
+    font-size: 32px;
+}
+
+.h3-style {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.h5-style {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0px;
+}
+
+.h6-style {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #8F9BBA;
+    margin: 0px;
+
+}
+
+.lbl-brdr {
+    border: 1px dashed #B2BAD0;
+    border-radius: 15px;
+}
+
+.lbl-style {
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+
+
+}
+
+.lbl-astrck::after {
+    content: '*';
+    color: red;
+}
+
+
+ input::placeholder ,textarea::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+}
+ 
+.val-fnt
+{
+    font-size: 14px;
+}
+
+.custom-select {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    border-color: #8F9BBA;
+    color: #8F9BBA;
+    padding: .5rem;
+}
+
+.p-heading {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #624E17;
+
+}
+
+.p-style {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.32px;
+    letter-spacing: -0.02em;
+    margin: 0;
+
+}
+.brdr-rds-20
+{
+    border-radius: 20px;
+}
+
