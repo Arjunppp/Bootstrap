@@ -57,7 +57,7 @@ body {
 .chck-custom
 {
     width: 14px;
-    height: 21px;
+    height: 14px;
 }
 .lbl-style.lbl-style-m-0
 {
@@ -118,6 +118,11 @@ body {
 {
     border-radius: 20px;
 }
+.form-range
+{
+    display: flex;
+    align-items: flex-end;
+}
 
 .form-control , .form-select
 {
@@ -143,6 +148,7 @@ input[type="range"]:focus::-webkit-slider-thumb
     background-color: #4318FF !important;
 }
 
+
 .form-check-input:checked {
     background-color: #4318FF !important;
     border: 1px solid #4318FF;
@@ -167,8 +173,18 @@ input[type="range"]::-webkit-slider-thumb {
  {
     background-color: #4318FF;
  }
-
-
+.card-header
+{
+    background: transparent !important;
+    border-bottom: none;
+   
+}
+.btn
+{
+    border-radius: 11px;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
  @media screen and (min-width:1440px) {
     body
     {
@@ -183,7 +199,7 @@ input[type="range"]::-webkit-slider-thumb {
     .nme-row
     {
         flex-direction: column;
-        gap: 5px;
+        gap: 9px;
     }
     
 }
