@@ -7,7 +7,7 @@
 body {
     background-color: var(--background-color);
     font-family: var(--font-family);
-    color: var(--text-color);
+    color: var(--text-color) !important;
 }
 
 .material-symbols-outlined.icn-fnt-32
@@ -19,6 +19,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
+    color: var(--text-color) !important;
 }
 
 .h5-style {
@@ -51,9 +52,16 @@ body {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 0.5rem;
-   
-
-
+    color: var(--text-color) !important;
+}
+.chck-custom
+{
+    width: 14px;
+    height: 21px;
+}
+.lbl-style.lbl-style-m-0
+{
+    margin-bottom: 0rem;
 }
 .text-clr
 {
@@ -73,9 +81,11 @@ body {
     font-weight: 400;
 }
  
-.val-fnt
+.rnge-fnt
 {
-    font-size: 14px;
+   width:70px;
+   font-size: 13px;
+   font-weight: 700;
 }
 
 .custom-select {
@@ -109,17 +119,43 @@ body {
     border-radius: 20px;
 }
 
-.form-control:focus ,.form-select:focus  ,.form-check-input:focus  
+.form-control , .form-select
+{
+    border-radius: 12px !important;
+}
+.form-check-input
+{
+    font-size: 14px;
+}
+.form-check 
+{
+    padding: 0rem !important;
+}
+
+.form-control:focus ,.form-select:focus  ,.form-check-input:focus 
 {
     border: 1px solid #4318FF;
     box-shadow: none;
    
 } 
-input[type="range"]:focus::-webkit-slider-thumb
+input[type="range"]:focus::-webkit-slider-thumb 
 {
-    background-color: #4318FF;
+    background-color: #4318FF !important;
 }
 
+.form-check-input:checked {
+    background-color: #4318FF !important;
+    border: 1px solid #4318FF;
+    box-shadow: none;
+  }
+
+  .chck-custom:checked
+  {
+    background-color: #4318FF !important;
+    border: 1px solid #4318FF;
+    box-shadow: none;
+  }
+  
 input[type="range"]::-webkit-slider-thumb {
    
     box-shadow: none  !important ;
@@ -127,5 +163,29 @@ input[type="range"]::-webkit-slider-thumb {
     border-color: #4318FF;
    
   }
+  .btn-primary
+ {
+    background-color: #4318FF;
+ }
 
 
+ @media screen and (min-width:1440px) {
+    body
+    {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+ }
+
+@media screen and (max-width:475px)
+{
+    .nme-row
+    {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+}
+
+ 

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <form class="container-fluid px-4 py-5 ">
+  <form class="container-fluid py-4 ">
     <section class="row d-md-flex gap-3 d-flex flex-md-row flex-column ">
       <div class="card col brdr-rds-20 py-2 ">
         <div class="card-body d-flex flex-column justify-content-start ">
@@ -37,7 +37,7 @@
             </label>
             <input type="file" class="form-control d-none" id="file">
           </div>
-          <div class="row mb-3">
+          <div class="row mb-3 nme-row">
             <div class="sal-width col">
               <label for="salutation" class="form-label lbl-style lbl-astrck">Salutation</label>
               <select id="salutation" class="form-select  custom-select ">
@@ -63,7 +63,7 @@
           <div class="row mb-3">
             <div class="col-md-6 col">
               <label for="email" class="form-label lbl-style lbl-astrck">Email Address</label>
-              <input type="email" id="email" class="form-control rounded" placeholder="mail@simmple.com">
+              <input type="email" id="email" class="form-control " placeholder="mail@simmple.com">
 
             </div>
             <div class="col-md-6 col">
@@ -72,28 +72,28 @@
 
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="row mb-3 nme-row">
             <div class="col col-md-6">
               <label for="date_of_birth" class="form-label lbl-style lbl-astrck">Date of Birth</label>
               <input type="date" id="date_of_birth" aria-label="Date of Birth" class="form-control" required="">
             </div>
             <div class="col col-md-6">
               <div class="d-flex flex-column gap-2">
-                  <p class="lbl-astrck lbl-style">
-                      Gender
-                  </p>
-                  <div class="d-flex flex-row gap-3">
-                      <div>
-                          <input type="radio" id="male" name="gender">
-                          <label for="male" class="lbl-style">Male</label>
-                      </div>
-                      <div>
-                          <input type="radio" id="female" name="gender">
-                          <label for="female" class="lbl-style">Female</label>
-                      </div>
+                <p class="lbl-astrck lbl-style">
+                  Gender
+                </p>
+                <div class="d-flex flex-row gap-3">
+                  <div class="d-flex align-center gap-2">
+                    <input type="radio" class="form-check-input" id="male" name="gender">
+                    <label for="male" class="lbl-style">Male</label>
                   </div>
+                  <div class="d-flex align-center gap-2">
+                    <input type="radio" class="form-check-input" id="female" name="gender">
+                    <label for="female" class="lbl-style">Female</label>
+                  </div>
+                </div>
               </div>
-          </div>
+            </div>
 
           </div>
           <div class="row mb-3">
@@ -138,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="card col  brdr-rds-20 py-2" >
+      <div class="card col  brdr-rds-20 py-2">
         <div class="card-body d-flex flex-column justify-content-start ">
           <div class="div row">
             <h3 class="card-title  mb-3 h3-style">Advanced Details</h3>
@@ -147,68 +147,67 @@
             <div class="col ">
               <div class="alert alert-warning p-2" role="alert">
                 <h4 class="alert-heading p-heading">Sample warning message alert</h4>
-                <p class="p-style">Aww yeah, you successfully read this important alert message. This example text is going to run a bit
+                <p class="p-style">Aww yeah, you successfully read this important alert message. This example text is
+                  going to run a bit
                   longer so ...</p>
 
               </div>
 
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="row mb-3 nme-row">
             <div class="col col-md-6">
-              <div class="row">
-                <div class="col col-8">
-                  <label for="height" class="form-label lbl-style lbl-astrck">Height</label>
-                  <input type="range" id="height" class="form-range">
+              <div class="row d-flex flex-column">
+                <div class="col ">
+                  <label for="height" class="form-label lbl-style lbl-astrck ">Height</label>
+
                 </div>
-                <div class="col d-flex align-items-end">
-                  <input type="text" class="form-control val-fnt" value="165 cm" style="width:60px;">
+                <div class="col d-flex gap-3">
+                  <input type="range" id="height" class="form-range">
+                  <input type="text" class="form-control rnge-fnt" value="165 cm">
                 </div>
               </div>
-
             </div>
             <div class="col col-md-6">
-              <div class="row">
-                <div class="col col-8">
+              <div class="row d-flex flex-column">
+                <div class="col ">
                   <label for="weight" class="form-label lbl-style lbl-astrck">Weight</label>
-                  <input type="range" id="weight" class="form-range">
+
                 </div>
-                <div class="col d-flex align-items-end">
-                  <input type="text" class="form-control val-fnt" value="68 kg">
+                <div class="col d-flex gap-3">
+                  <input type="range" id="weight" class="form-range">
+                  <input type="text" class="form-control rnge-fnt " value="68 kg" style="width:60px;">
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mb-3">
-            <div class="col col-md-4">
+          <div class="row mb-3 gap-2 gap-lg-0">
+            <div class="col-12  col-lg-4">
               <label for="color" class="form-label lbl-style lbl-astrck">Choose color</label>
-              <input type="color" id="color" value="#CB5D9F" class="form-control">
-
-
+              <input type="color" id="color" value="#CB5D9F" class="form-control form-control-color"
+                style="width: 80%;">
             </div>
-            <div class="col col-lg-8 d-flex align-items-between ">
+            <div class="col-12 col-lg-8 d-flex align-items-between ">
               <div class="row">
-                <p class="row lbl-style  lbl-astrck">Choose template</p>
-                <div class="row">
-                  <div class="col  form-check d-flex align-items-center gap-2">
-                    <input class="form-check-input val-fnt" type="checkbox" id="template1" value="option1" checked="">
-                    <label class="form-check-label val-fnt" for="template1"> Template 1
-                    </label>
+                <div class="div">
+                  <p class="lbl-astrck lbl-style">choose template</p>
+                </div>
+                <div class="div d-flex gap-2">
+                  <div class="col d-flex align-center gap-1">
+                    <input type="checkbox" class="chck-custom" id="temp-1">
+                    <label for="temp-1" class="lbl-style lbl-style-m-0">Template 1</label>
                   </div>
-                  <div class="col form-check d-flex align-items-center gap-2">
-                    <input class="form-check-input val-fnt" type="checkbox" id="template2" name="exampleRadios"
-                      value="option1" checked="">
-                    <label class="form-check-label val-fnt" for="template2"> Template 2
-                    </label>
+                  <div class="col d-flex align-center gap-1">
+                    <input type="checkbox" class="chck-custom" id="temp-2">
+                    <label for="temp-2" class="lbl-style lbl-style-m-0">Template 1</label>
                   </div>
-                  <div class="col  form-check d-flex align-items-center gap-2">
-                    <input class="form-check-input val-fnt" type="checkbox" id="template3" name="exampleRadios"
-                      value="option1" checked="">
-                    <label class="form-check-label val-fnt" for="template3"> Template 3
-                    </label>
+                  <div class="col d-flex align-center gap-1">
+                    <input type="checkbox" class="chck-custom" id="temp-3">
+                    <label for="temp-3" class="lbl-style lbl-style-m-0">Template 1</label>
                   </div>
                 </div>
               </div>
+
             </div>
 
 
@@ -228,8 +227,8 @@
             </div>
           </div>
           <div class="row mb-3">
-            <div class="col">
-              <input type="checkbox" id="accept_terms">
+            <div class="col d-flex align-center gap-2">
+              <input type="checkbox" class="form-check-input" id="accept_terms">
               <label for="accept_terms" class="form-label lbl-style">I Accept Terms and Condition</label>
             </div>
           </div>
